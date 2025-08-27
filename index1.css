@@ -1,0 +1,17 @@
+  .navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:14px 20px;
+    background: #fff;
+    border-bottom: 1px solid #e6f1ea;
+
+    top:0;
+    z-index:30;
+  }
+    .brand{
+    display:flex;
+    gap:12px;
+    align-items:center;
+  }

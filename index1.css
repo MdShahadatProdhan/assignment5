@@ -63,7 +63,7 @@
   /* ---------- HERO ---------- */
   .hero{
     padding:36px 20px 46px;
-    background: linear-gradient(90deg,#0a6b3f 0%, #1d8b57 70%);
+    background: rgba(0, 103, 71, 1);
     color:white;
     text-align:center;
     border-bottom-left-radius:16px;

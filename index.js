@@ -1,31 +1,41 @@
 /* ---------------------------
   Data: list of services
 ----------------------------*/
+const services = [
+  { id: 'svc1', name_bn: 'জাতীয় জরুরি সেবা', name_en: 'National Emergency', number: '999', category: 'সারকারি', icon: '🚨' },
+  { id: 'svc2', name_bn: 'পুলিশ', name_en: 'Police', number: '999', category: 'পুলিশ', icon: '👮' },
+  { id: 'svc3', name_bn: 'ফায়ার সার্ভিস', name_en: 'Fire Service', number: '999', category: 'ফায়ার', icon: '🚒' },
+  { id: 'svc4', name_bn: 'অ্যাম্বুলেন্স', name_en: 'Ambulance', number: '1994-999999', category: 'স্বাস্থ্য', icon: '🚑' },
+  { id: 'svc5', name_bn: 'নারী ও শিশু সহায়তা', name_en: 'Women & Child Helpline', number: '109', category: 'সহায়তা', icon: '🤝' },
+  { id: 'svc6', name_bn: 'দুর্নীতি', name_en: 'Anti-Corruption', number: '106', category: 'সরকারি', icon: '🛡️' },
+  { id: 'svc7', name_bn: 'বিদ্যুৎ বিঘ্ন', name_en: 'Electricity Outage', number: '16216', category: 'বিদ্যুৎ', icon: '💡' },
+  { id: 'svc8', name_bn: 'ব্র্যাক', name_en: 'BRAC', number: '16445', category: 'এনজিও', icon: '🏢' },
+  { id: 'svc9', name_bn: 'বাংলাদেশ রেলওয়ে', name_en: 'Bangladesh Railway', number: '163', category: 'পরিবহন', icon: '🚆' }
+];
 
-navbar
 /* ---------------------------
   State
 ----------------------------*/
 let coinCount = 100;        // default coins
-let copyCount = 2;         // default copy count
+let copyCount = 0;         // default copy count
 let favCount = 0;          // favorites count
 let callHistory = [];      // {name, number, time}
 
 /* ---------------------------
   Helpers: DOM references & updates
 ----------------------------*/
-// const cardsContainer = document.getElementById('cards-container');
-// const historyList = document.getElementById('history-list');
-// const navCoin = document.getElementById('nav-coin-count');
-// const navCopy = document.getElementById('nav-copy-count');
-// const navHeart = document.getElementById('nav-heart-count');
-// const clearHistoryBtn = document.getElementById('clear-history');
+const cardsContainer = document.getElementById('cards-container');
+const historyList = document.getElementById('history-list');
+const navCoin = document.getElementById('nav-coin-count');
+const navCopy = document.getElementById('nav-copy-count');
+const navHeart = document.getElementById('nav-heart-count');
+const clearHistoryBtn = document.getElementById('clear-history');
 
-// function updateNavUI(){
-//   navCoin.textContent = coinCount;
-//   navCopy.textContent = copyCount;
-//   navHeart.textContent = favCount;
-// }
+function updateNavUI(){
+  navCoin.textContent = coinCount;
+  navCopy.textContent = copyCount;
+  navHeart.textContent = favCount;
+}
 
 function renderHistory(){
   historyList.innerHTML = '';

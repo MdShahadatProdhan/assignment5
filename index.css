@@ -25,7 +25,6 @@
     padding:14px 20px;
     background: #fff;
     border-bottom: 1px solid #e6f1ea;
-    position:sticky;
     top:0;
     z-index:30;
   }
@@ -37,12 +36,11 @@
   .logo-circle{
     width:44px;height:44px;border-radius:50%;
     display:grid;place-items:center;
-    background:linear-gradient(180deg,var(--green),#026a39);
+
     color:white;font-weight:700;font-size:13px;
-    box-shadow: var(--shadow);
+
   }
   .site-name{font-weight:700;font-size:18px}
-  .site-tag{font-size:12px;color:#4b6857}
 
   .nav-stats{
     display:flex;
@@ -65,18 +63,25 @@
   /* ---------- HERO ---------- */
   .hero{
     padding:36px 20px 46px;
-    background: linear-gradient(90deg,#0a6b3f 0%, #1d8b57 70%);
+    background: rgba(0, 103, 71, 1);
     color:white;
     text-align:center;
-    border-bottom-left-radius:16px;
-    border-bottom-right-radius:16px;
     margin:14px;
+  }
+  .bd{
+    height: 92px;
+    width: 92px;
+  }
+  .bd1{
+    height: 50px;
+    width: 50px;
+  }.bd2{
+    height: 30px;
+    width: 30px;
   }
   .hero .hero-logo{
     width:70px;height:70px;border-radius:50%;
-    background:rgba(255,255,255,0.12);
     display:inline-grid;place-items:center;margin:0 auto 14px;
-    border:2px solid rgba(255,255,255,0.12);
   }
   .hero h1{font-size:28px;margin:6px 0 2px;font-weight:800;letter-spacing:0.6px}
   .hero p.subtitle{margin:0;font-size:14px;opacity:0.9}

@@ -3,15 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="stylesheet" href="index.css">
 <title>Emergency Service Directory</title>
-
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
 
 <header class="navbar" role="banner">
   <div class="brand">
-    <div class="icon"><img class="icon1"  src="assets/logo.png" alt=""></div>
+    <div class="logo-circle" aria-hidden="true"><img class="bd1" src="assets/logo.png" alt=""></div>
     <div>
       <div class="site-name">Emergency Service</div>
     </div>
@@ -19,199 +18,40 @@
 
   <div class="nav-stats" role="status" aria-live="polite">
     <div class="stat" title="Total favorites">
-      <div class="icon"><img class="icon" src="assets/heart.png" alt=""></div>
+      <div class="icon"><img class="bd2" src="assets/heart.png" alt=""></div>
       <strong id="nav-heart-count">0</strong>
     </div>
     <div class="stat" title="Coins remaining">
-      <div class="icon"><img class="icon"  src="assets/coin.png" alt=""></div>
+      <div class="icon"><img class="bd2" src="assets/coin.png" alt=""></div>
       <strong id="nav-coin-count">100</strong>
     </div>
     <div class="stat" title="Copy count">
-      <div class="icon">copy</div>
-      <strong id="nav-copy-count"></strong>
+      <div class="icon">Copy</div>
+      <strong id="nav-copy-count">0</strong>
     </div>
   </div>
 </header>
 
 <!-- HERO -->
 <section class="hero" aria-label="Hero section">
-  <div class=""><img class="icon2" src="assets/logo-dark.png" alt=""></div>
+  <div class="hero-logo " aria-hidden="true"><img class="bd"  src="assets/logo-dark.png" alt=""></div>
   <h1>জরুরি সেবা ডিরেক্টরি</h1>
   <p class="subtitle">Government Emergency Services at Your Fingertip — A Project by Government of the People's Republic of Bangladesh</p>
 </section>
 
-
 <!-- MAIN -->
-<div class="cards">
-  <!-- 1 -->
-  <article class="card">
-      <button class="heart-btn" title="Favorite" aria-label="Toggle favorite">💗</button>
-    <button class="heart-btn">💗</button>
-    <div class="top">
-      <div class="icon">🚨</div>
-      <div>
-        <h3>জাতীয় জরুরি সেবা</h3>
-        <div class="sub">National Emergency</div>
-        <div class="badge">সারকারি</div>
-      </div>
+<main class="container">
+  <!-- CARDS -->
+  <section>
+    <div class="cards" id="cards-container">
+      <!-- cards will be injected via JS -->
     </div>
-    <div class="number">999</div>
-    <div class="card-actions">
-      <button class="btn copy" data-action="copy" data-number="999">📋 Copy</button>
-      <button class="btn call" data-action="call" data-id="svc1">📞 Call</button>
-    </div>
-  </article>
-
-  <!-- 2 -->
-  <article class="card">
-    <button class="heart-btn">💗</button>
-    <div class="top">
-      <div class="icon">👮</div>
-      <div>
-        <h3>পুলিশ</h3>
-        <div class="sub">Police</div>
-        <div class="badge">পুলিশ</div>
-      </div>
-    </div>
-    <div class="number">999</div>
-    <div class="card-actions">
-      <button class="btn copy" data-action="copy" data-number="999">📋 Copy</button>
-      <button class="btn call" data-action="call" data-id="svc2">📞 Call</button>
-    </div>
-  </article>
-
-  <!-- 3 -->
-  <article class="card">
-    <button class="heart-btn">💗</button>
-    <div class="top">
-      <div class="icon">🚒</div>
-      <div>
-        <h3>ফায়ার সার্ভিস</h3>
-        <div class="sub">Fire Service</div>
-        <div class="badge">ফায়ার</div>
-      </div>
-    </div>
-    <div class="number">999</div>
-    <div class="card-actions">
-      <button class="btn copy" data-action="copy" data-number="999">📋 Copy</button>
-      <button class="btn call" data-action="call" data-id="svc3">📞 Call</button>
-    </div>
-  </article>
-
-  <!-- 4 -->
-  <article class="card">
-    <button class="heart-btn">💗</button>
-    <div class="top">
-      <div class="icon">🚑</div>
-      <div>
-        <h3>অ্যাম্বুলেন্স</h3>
-        <div class="sub">Ambulance</div>
-        <div class="badge">স্বাস্থ্য</div>
-      </div>
-    </div>
-    <div class="number">1994-999999</div>
-    <div class="card-actions">
-      <button class="btn copy" data-action="copy" data-number="1994-999999">📋 Copy</button>
-      <button class="btn call" data-action="call" data-id="svc4">📞 Call</button>
-    </div>
-  </article>
-
-  <!-- 5 -->
-  <article class="card">
-    <button class="heart-btn">💗</button>
-    <div class="top">
-      <div class="icon">🤝</div>
-      <div>
-        <h3>নারী ও শিশু সহায়তা</h3>
-        <div class="sub">Women & Child Helpline</div>
-        <div class="badge">সহায়তা</div>
-      </div>
-    </div>
-    <div class="number">109</div>
-    <div class="card-actions">
-      <button class="btn copy" data-action="copy" data-number="109">📋 Copy</button>
-      <button class="btn call" data-action="call" data-id="svc5">📞 Call</button>
-    </div>
-  </article>
-
-  <!-- 6 -->
-  <article class="card">
-    <button class="heart-btn">💗</button>
-    <div class="top">
-      <div class="icon">🛡️</div>
-      <div>
-        <h3>দুর্নীতি</h3>
-        <div class="sub">Anti-Corruption</div>
-        <div class="badge">সরকারি</div>
-      </div>
-    </div>
-    <div class="number">106</div>
-    <div class="card-actions">
-      <button class="btn copy" data-action="copy" data-number="106">📋 Copy</button>
-      <button class="btn call" data-action="call" data-id="svc6">📞 Call</button>
-    </div>
-  </article>
-
-  <!-- 7 -->
-  <article class="card">
-    <button class="heart-btn">💗</button>
-    <div class="top">
-      <div class="icon">💡</div>
-      <div>
-        <h3>বিদ্যুৎ বিঘ্ন</h3>
-        <div class="sub">Electricity Outage</div>
-        <div class="badge">বিদ্যুৎ</div>
-      </div>
-    </div>
-    <div class="number">16216</div>
-    <div class="card-actions">
-      <button class="btn copy" data-action="copy" data-number="16216">📋 Copy</button>
-      <button class="btn call" data-action="call" data-id="svc7">📞 Call</button>
-    </div>
-  </article>
-
-  <!-- 8 -->
-  <article class="card">
-    <button class="heart-btn">💗</button>
-    <div class="top">
-      <div class="icon">🏢</div>
-      <div>
-        <h3>ব্র্যাক</h3>
-        <div class="sub">BRAC</div>
-        <div class="badge">এনজিও</div>
-      </div>
-    </div>
-    <div class="number">16445</div>
-    <div class="card-actions">
-      <button class="btn copy" data-action="copy" data-number="16445">📋 Copy</button>
-      <button class="btn call" data-action="call" data-id="svc8">📞 Call</button>
-    </div>
-  </article>
-
-  <!-- 9 -->
-  <article class="card">
-    <button class="heart-btn">💗</button>
-    <div class="top">
-      <div class="icon">🚆</div>
-      <div>
-        <h3>বাংলাদেশ রেলওয়ে</h3>
-        <div class="sub">Bangladesh Railway</div>
-        <div class="badge">পরিবহন</div>
-      </div>
-    </div>
-    <div class="number">163</div>
-    <div class="card-actions">
-      <button class="btn copy" data-action="copy" data-number="163">📋 Copy</button>
-      <button class="btn call" data-action="call" data-id="svc9">📞 Call</button>
-    </div>
-  </article>
-</div>
   </section>
 
   <!-- HISTORY -->
   <aside class="history" aria-label="Call History">
     <div class="hdr">
-      <h4>⏱️ Call History</h4>
+      <h4><img class="bd2" src="assets/download.png" alt=""> Call History</h4>
       <button class="clear-btn" id="clear-history">Clear</button>
     </div>
     <div class="history-list" id="history-list">
@@ -220,7 +60,6 @@
     </div>
   </aside>
 </main>
-
-<script src="index.js">  </script>
+<script src="index.js"></script>
 </body>
 </html>
